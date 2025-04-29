@@ -2,6 +2,7 @@ import { SearchingBar } from "../components/SearchingBar";
 import { ArtistInfo } from "../components/ArtistCard";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../styles/Home.css"
 
 export default function Home() {
 
@@ -32,8 +33,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <h1>Welcome to Girliefy</h1>
+    <div className="father-cnt">
+      <span className="title-cnt">
+        <h3>W E L C O M E   T O</h3>
+        <h1>Girliefy</h1>
+      </span>
       <SearchingBar  
         artists = {artists}
         setArtists = {setArtists}

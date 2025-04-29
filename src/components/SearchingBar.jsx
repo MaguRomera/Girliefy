@@ -7,7 +7,7 @@ export function SearchingBar(props) {
   function searchArtist(query) {
     if (!query) return;  
     axios
-      .get(`https://api.spotify.com/v1/search?q=${query}&type=artist&limit=10`)
+      .get(`https://api.spotify.com/v1/search?q=${query}&type=artist&limit=12`)
       .then((data) => {
         props.setArtists(data.data.artists.items)
       })
@@ -20,10 +20,15 @@ export function SearchingBar(props) {
     <input
       type="text"
       value={artist}
+      className="search-input"
       placeholder="Search an artist..."
       onChange={(event) => {
         const value = event.target.value;
         setArtist(value);  
+        if (value.trim() === "") {
+          props.setArtists([]);
+          return; //ver si puedo agregar un botón de eliminar para no tener q usar esto
+        }
         searchArtist(value); 
       }}
     />
