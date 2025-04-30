@@ -104,7 +104,7 @@ body{
 .artist-card:hover{
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
-    background-color: var(--dirtypink);
+    background-color: black;
 }
 .artist-card h3{
     padding: 0%;

@@ -9,6 +9,7 @@ function App() {
 
   const [token, setToken] = useState(null)
   function requestToken() {
+
     axios.post("https://accounts.spotify.com/api/token",
       {
         grant_type:"client_credentials",
@@ -32,8 +33,11 @@ function App() {
   }
 
   useEffect(() =>{
-    requestToken()
-  }, []);
+    if(!token){
+      requestToken();
+    }
+    
+  },[]);
 
 
   return (

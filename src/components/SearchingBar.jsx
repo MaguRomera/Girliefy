@@ -28,7 +28,7 @@ export function SearchingBar(props) {
         if (value.trim() === "") {
           props.setArtists([]);
           return; //ver si puedo agregar un botón de eliminar para no tener q usar esto
-        }
+        } 
         searchArtist(value); 
       }}
     />

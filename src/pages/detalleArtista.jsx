@@ -5,6 +5,7 @@ import "../styles/DetalleArtista.css"
 
 import { ArtistDetails } from '../components/ArtistDetailsHeader';
 import { AlbumCard } from '../components/AlbumCard';
+import { BackButton } from '../components/backButton';
 
 export function DetalleArtista(props){
     const { id } = useParams();
@@ -47,6 +48,9 @@ export function DetalleArtista(props){
     if (!artistInfo) return <div>Cargando información del artista...</div>;
     return(
         <div>
+            <header className='menu'>
+                <BackButton/>
+            </header>
             <ArtistDetails
                 artistInfo={artistInfo}
             />  
