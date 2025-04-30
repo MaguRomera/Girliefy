@@ -1,0 +1,18 @@
+.artistinfo-cnt {
+    position: relative;
+    width: 100vw;
+    height: 4vh;
+    display: inline-block;
+}
+  
+.artistinfo-img {
+  width: 100%;
+  display: block;
+}
+  
+.text-cnt {
+  position: absolute;
+  top: 20px;      
+  left: 20px;        
+  color: white; 
+}

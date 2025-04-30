@@ -1,7 +1,6 @@
 import { SearchingBar } from "../components/SearchingBar";
 import { ArtistInfo } from "../components/ArtistCard";
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
 import "../styles/Home.css"
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
         setArtists = {setArtists}
       />
       <div className="artists-cnt">
-        {artists.length > 0 && artists.map((artist) => (
+        {artists.map((artist) => (
           <ArtistInfo 
             key={artist.id} artist={artist} 
           />

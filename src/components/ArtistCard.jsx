@@ -2,10 +2,10 @@ import { Navigate, useNavigate } from 'react-router-dom';
 
 
 export function ArtistInfo(props){    
-    
+
     let navigate = useNavigate();
     const handleNavigation = () =>{
-        navigate(`/artist/${props.artist.id}`)
+        navigate(`/artist/${props.artist.name}/${props.artist.id}`)
     }
     
     return (

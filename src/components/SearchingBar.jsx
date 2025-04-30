@@ -8,7 +8,7 @@ export function SearchingBar(props) {
     axios
       .get(`https://api.spotify.com/v1/search?q=${query}&type=artist&limit=12`)
       .then((data) => {
-        console.log(data.data.artists.items)
+        console.log(data.data.artists.items) //SACAR ANTES DE DEPLOYAR
         props.setArtists(data.data.artists.items)
       })
       .catch((error) => {
