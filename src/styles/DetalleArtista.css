@@ -1,18 +1,35 @@
-.artistinfo-cnt {
-    position: relative;
-    width: 100vw;
-    height: 4vh;
-    display: inline-block;
+body{
+    background-color: var(--darkgrey);
 }
-  
-.artistinfo-img {
-  width: 100%;
-  display: block;
+
+.artistinfo-cnt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0%;
+    padding: 2rem;
+    column-gap: 1rem;
 }
-  
-.text-cnt {
-  position: absolute;
-  top: 20px;      
-  left: 20px;        
-  color: white; 
+
+.artistinfo-img{
+    width: 7rem;
+    height: auto;
+    border-radius: 0.3rem;
+}
+.text-cnt{
+    color: var(--lightgrey);
+    font-family: "Montserrat", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+.text-cnt p{
+    margin: 0%;
+    padding: 0.1rem;
+    font-size: 0.8rem;
+}
+.text-cnt h3{
+    margin: 0%;
+    padding: 0.1rem;
+    font-size: 1.6rem;
 }
