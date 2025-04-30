@@ -1,7 +1,15 @@
+import { Navigate, useNavigate } from 'react-router-dom';
 
-export function ArtistInfo(props){
+
+export function ArtistInfo(props){    
+    
+    let navigate = useNavigate();
+    const handleNavigation = () =>{
+        navigate(`/artist/${props.artist.id}`)
+    }
+    
     return (
-        <div className="artist-card">
+        <div className="artist-card" onClick={handleNavigation}>
             <img 
                 src={props.artist.images[0]?.url} 
                 alt={props.artist.name} 

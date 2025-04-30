@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="father-cnt">
       <span className="title-cnt">
-        <h3>W E L C O M E   T O</h3>
+        <h3>WELCOME TO</h3>
         <h1>Girliefy</h1>
       </span>
       <SearchingBar  
@@ -44,7 +44,9 @@ export default function Home() {
       />
       <div className="artists-cnt">
         {artists.length > 0 && artists.map((artist) => (
-          <ArtistInfo key={artist.id} artist={artist} />
+          <ArtistInfo 
+            key={artist.id} artist={artist} 
+          />
         ))} 
       </div>
     </div>
