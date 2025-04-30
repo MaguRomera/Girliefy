@@ -33,3 +33,11 @@ body{
     padding: 0.1rem;
     font-size: 1.6rem;
 }
+
+/*album cards*/
+.album-card h3{
+    color: aliceblue;
+}
+.album-card p{
+    color: aliceblue;
+}
