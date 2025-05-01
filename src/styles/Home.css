@@ -36,35 +36,37 @@ body{
 .title-cnt h1{
     color: var(--lightpink);
     font-family: "Julius Sans One", sans-serif;
-    font-size: 3rem;
-    margin-top: 0%;
+    font-size: 8rem;
+    margin: 0%;
 }
 .title-cnt h3{
     color: var(--verylightpink);
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     margin-bottom: 0%;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.5rem;
 }
 
 /*searching bar*/
 .search-input{
     background-color: var(--mediumgrey);
     border: none;
-    border-radius: 15px;
-    width: 28vw;
-    height: 2rem;
+    border-radius: 1.5rem;
+    width: 30vw;
+    height: 3rem;
     color: var(--lightpink);
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 0.7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1rem;
 }
 .search-input::placeholder{
     color: var(--verylightpink);
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1rem;
 }
@@ -75,7 +77,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
@@ -88,11 +90,11 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     background-color: var(--mediumgrey);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 15px;
-    width: 15rem;
-    height: fit-content;
-    column-gap: 0.5rem;
+    width: 25rem;
+    height: 10rem;
+    column-gap: 2rem;
     margin: 0%;
     cursor: pointer;
     overflow: hidden;
@@ -111,13 +113,13 @@ body{
     color: var(--lightgrey);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2rem;
     max-width: 100%;
 }
 
 .artist-img{
-    width: 5rem;
-    height: 5rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     margin: 0%;
     padding: 0%;
