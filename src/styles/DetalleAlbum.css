@@ -1,0 +1,132 @@
+body{
+    background-color: var(--darkgrey);
+   
+}
+.loading-sign{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: var(--lightgrey);
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    height: 100vh;
+}
+
+/*----*/
+
+.principal-cnt{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.principal-cnt header{
+    margin-top: 0.5rem;
+    padding: 0%;
+    height: fit-content;
+}
+
+.secondary-cnt{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: 0%;
+}
+
+.album-info-cnt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-top: 0%;
+    width: 20rem;
+}
+.album-info-cnt img{
+    width: 20rem;
+    height: auto;
+    border-radius: 0.3rem;
+}
+.album-info-cnt h3, .album-info-cnt p{
+    color: var(--lightgrey);
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0%;
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+.album-info-cnt h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.album-info-cnt p{
+    font-size: 1.4rem;
+}
+
+/*song cards*/
+
+.songs-prinp-cnt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 0%;
+    margin-left: 4rem;
+    padding-left: 2rem;
+    align-items: center;
+    overflow-y: auto;
+}
+.songs-prinp-cnt::-webkit-scrollbar {
+    width: 0.5rem;     
+}
+
+.songs-prinp-cnt::-webkit-scrollbar-track {
+    background: var(--darkgrey); 
+    border-radius: 1rem;
+}
+
+.songs-prinp-cnt::-webkit-scrollbar-thumb {
+    background-color: var(--lightgrey);
+    border-radius: 1rem;
+    border: 1px solid var(--mediumgrey);
+}
+
+.song-cnt{
+    background-color: var(--mediumgrey);
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin: 0.6rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+}
+.song-cnt:hover{
+    filter: brightness(140%);
+}
+
+.song-info h3, .song-info p{
+    color: var(--lightgrey);
+    font-family: "Montserrat", sans-serif;
+    margin: 0%;
+    margin-left: 0.5rem;
+}
+.song-info h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.PlayButton{
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+}
+.PlayButton:hover{
+    opacity: 50%;
+}

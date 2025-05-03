@@ -1,14 +1,15 @@
 import { Navigate, useNavigate } from 'react-router-dom';
+import Back from "../media/back.svg"
 
 export function BackButton(){
 
     let navigate = useNavigate();
     const handleNavigation = () =>{
-        navigate(`/`)
+        navigate(-1)
     }
     return(
         <img 
-            src="https://unpkg.com/@mynaui/icons/icons-solid/arrow-left-circle.svg" 
+            src={Back} 
             title="Go back"
             onClick={handleNavigation}
             className="back-btn"

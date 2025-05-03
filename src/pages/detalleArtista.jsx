@@ -9,6 +9,7 @@ import { BackButton } from '../components/backButton';
 
 export function DetalleArtista(props){
     const { id } = useParams();
+    const { name } = useParams();
     const [artistInfo, setArtistInfo] = useState(null)
     const [artistAlbums, setArtistAlbums] = useState([])
 
@@ -21,7 +22,7 @@ export function DetalleArtista(props){
           })
           .catch((error) => {
             console.log("Error!:", error)
-          })
+        })
     }
 
     function handleArtistAlbums() { //para obtener los ÁLBUMES de UN artista
@@ -45,7 +46,7 @@ export function DetalleArtista(props){
         }
     }, [props.token]);
 
-    if (!artistInfo) return <div>Cargando información del artista...</div>;
+    if (!artistInfo) return <div className='loading-sign'><h3>Loading artist...</h3></div>;
     return(
         <div>
             <header className='menu'>
@@ -57,7 +58,7 @@ export function DetalleArtista(props){
            <section className='albums-cnt'>
                 {artistAlbums.map((album) => (
                     <AlbumCard 
-                        key={album.id} album={album} 
+                        key={album.id} album={album} id_art={id} name_Art={name}
                     />
                 ))}
             </section>

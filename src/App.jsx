@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home.jsx";
 import { DetalleArtista } from "./pages/detalleArtista.jsx";
+import { AlbumDetails } from "./pages/detalleAlbum.jsx";
 import "./styles/App.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -44,6 +45,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home token={token}/>} />
       <Route path="/artist/:name/:id" element={<DetalleArtista token={token} requestToken={requestToken}/>}/>
+      <Route path="/artist/:name/:id/album/:name_alb/:id_alb" element={<AlbumDetails token={token} requestToken={requestToken}/>}/>
     </Routes>
   );
 }
