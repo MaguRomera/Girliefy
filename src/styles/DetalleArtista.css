@@ -109,14 +109,15 @@ body{
 .menu{
     width: 100%;
     height: 5vh;
+    margin-left: 2rem;
 }
 
 .back-btn{
     padding: 1rem;
     margin: 0%;
-    margin-left: 2rem;
     width: 3rem;
     height: auto;
+    cursor: pointer;
 }
 .back-btn:hover{
     opacity: 70%;

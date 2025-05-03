@@ -18,6 +18,13 @@ body{
     height: 100%;
     width: 100%;
 }
+
+header{
+    height: 5vh;
+    margin-left: 2rem;
+    align-items: start;
+}
+
 .father-cnt{
     display: flex;
     align-items: center;
