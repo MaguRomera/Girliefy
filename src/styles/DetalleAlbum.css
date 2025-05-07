@@ -87,7 +87,7 @@ body{
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 0%;
-    margin-left: 4rem;
+    margin-left: 2rem;
     padding-left: 2rem;
     align-items: center;
     overflow-y: auto;
@@ -109,7 +109,7 @@ body{
 
 .song-cnt{
     background-color: var(--mediumgrey);
-    width: 60rem;
+    width: 50rem;
     display: flex;
     flex-direction: row;
     height: fit-content;
