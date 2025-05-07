@@ -1,4 +1,5 @@
 import { PlaySongButton } from "./PlaySongButton"
+import { MarkAsFav } from "./FavBtn"
 
 export function SongCards(props){
     
@@ -11,7 +12,7 @@ export function SongCards(props){
                 <h3>{props.song.name}</h3>
                 <p>{props.song.artists[0].name}</p>
             </span>
-            
+            <MarkAsFav/>
         </span>
     )
 }

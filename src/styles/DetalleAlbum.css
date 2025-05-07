@@ -146,10 +146,15 @@ body{
     opacity: 50%;
 }
 
-.FavButton{
+.FavBtn{
+    background-color: var(--mediumgrey);
+    border: none;
     width: 3rem;
     height: auto;
     cursor: pointer;
     display: flex;
     margin-left: auto;
+}
+.FavBtnIcon{
+    width: 3rem;
 }
