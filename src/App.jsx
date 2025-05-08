@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home.jsx";
 import { DetalleArtista } from "./pages/detalleArtista.jsx";
 import { AlbumDetails } from "./pages/detalleAlbum.jsx";
+import { FavSongs } from "./pages/favSongs.jsx";
 import "./styles/App.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -46,6 +47,7 @@ function App() {
       <Route path="/" element={<Home token={token}/>} />
       <Route path="/artist/:name/:id" element={<DetalleArtista token={token} requestToken={requestToken}/>}/>
       <Route path="/artist/:name/:id/album/:name_alb/:id_alb" element={<AlbumDetails token={token} requestToken={requestToken}/>}/>
+      <Route path="/favsongs" element={<FavSongs token={token} requestToken={requestToken}/>}/>
     </Routes>
   );
 }

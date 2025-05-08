@@ -12,7 +12,13 @@ export function SongCards(props){
                 <h3>{props.song.name}</h3>
                 <p>{props.song.artists[0].name}</p>
             </span>
-            <MarkAsFav/>
+            <MarkAsFav
+                songname={props.song.name} 
+                artistname={props.song.artists[0].name} 
+                artistid={props.song.artists[0].id} 
+                albumname={props.albumname}
+                albumid={props.albumid}
+            />
         </span>
     )
 }

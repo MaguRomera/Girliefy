@@ -6,6 +6,7 @@ import "../styles/DetalleArtista.css"
 import { ArtistDetails } from '../components/ArtistDetailsHeader';
 import { AlbumCard } from '../components/AlbumCard';
 import { BackButton } from '../components/backButton';
+import { GoToFavSongs } from '../components/GoToFavSongs';
 
 export function DetalleArtista(props){
     const { id } = useParams();
@@ -51,6 +52,7 @@ export function DetalleArtista(props){
         <div>
             <header className='menu'>
                 <BackButton/>
+                <GoToFavSongs/>
             </header>
             <ArtistDetails
                 artistInfo={artistInfo}

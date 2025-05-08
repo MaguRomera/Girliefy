@@ -37,6 +37,9 @@ body{
     margin-top: 0.5rem;
     padding: 0%;
     height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
 }
 
 .secondary-cnt{

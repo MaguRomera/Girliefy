@@ -5,6 +5,7 @@ import "../styles/DetalleAlbum.css"
 import { ShowAlbumInfo } from '../components/AlbumDetails';
 import { SongCards } from '../components/SongCards';
 import { BackButton } from '../components/backButton';
+import { GoToFavSongs } from '../components/GoToFavSongs';
 
 export function AlbumDetails(props){
     const { id_alb } = useParams();
@@ -48,6 +49,7 @@ export function AlbumDetails(props){
         <div className='principal-cnt'>
             <header>
                 <BackButton/>
+                <GoToFavSongs />
             </header>
             <div className='secondary-cnt'>
                 <ShowAlbumInfo
@@ -57,7 +59,10 @@ export function AlbumDetails(props){
                 <div className='songs-prinp-cnt'>
                     {albumSongs.map((song) => (
                         <SongCards 
-                            key={song.id} song={song} 
+                            key={song.id} 
+                            song={song} 
+                            albumname={albumInfo.name} 
+                            albumid={albumInfo.id}
                         />
                     ))}
                 </div>

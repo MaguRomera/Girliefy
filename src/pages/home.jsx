@@ -1,7 +1,10 @@
 import { SearchingBar } from "../components/SearchingBar";
 import { ArtistInfo } from "../components/ArtistCard";
+import { GoToFavSongs } from "../components/GoToFavSongs";
 import { useState } from 'react';
 import "../styles/Home.css"
+
+
 
 export default function Home() {
 
@@ -9,6 +12,9 @@ export default function Home() {
 
   return (
     <div className="father-cnt">
+      <header>
+        <GoToFavSongs/>
+      </header>
       <span className="title-cnt">
         <h3>WELCOME TO</h3>
         <h1>Girliefy</h1>
