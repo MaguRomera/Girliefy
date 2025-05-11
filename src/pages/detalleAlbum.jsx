@@ -4,11 +4,13 @@ import { useEffect, useState } from 'react';
 import "../styles/DetalleAlbum.css"
 import { ShowAlbumInfo } from '../components/AlbumDetails';
 import { SongCards } from '../components/SongCards';
-import { BackButton } from '../components/backButton';
+import { BackButton } from '../components/BackButton_ToArtist';
 import { GoToFavSongs } from '../components/GoToFavSongs';
 
 export function AlbumDetails(props){
     const { id_alb } = useParams();
+    const { id } = useParams();
+    const { name } = useParams();
     const [albumInfo, setAlbumInfo] = useState(null)
     const [albumSongs, setAlbumSongs] = useState([])
 
@@ -48,7 +50,10 @@ export function AlbumDetails(props){
     return(
         <div className='principal-cnt'>
             <header>
-                <BackButton/>
+                <BackButton
+                id={id}
+                name={name}
+                />
                 <GoToFavSongs />
             </header>
             <div className='secondary-cnt'>

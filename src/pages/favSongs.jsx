@@ -13,7 +13,7 @@ export function FavSongs() {
 
   return (
     <div className="fav-songs-cnt">
-      <h2>My favourite songs</h2>
+      <h2>MY FAVOURITE SONGS</h2>
       {favs.length === 0 ? (
         <p>Oops, it seems like you don't have fav songs yet...</p>
       ) : (

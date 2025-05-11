@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 export function MarkAsFav(props) {
   const [isMarked, setIsMarked] = useState(false);
 
-  const { songname, artistname, artistid, albumname, albumid } = props;
+  const { songid, songname, artistname, artistid, albumname, albumid } = props;
 
   const favSong = {
-    id: `${songname}-${artistname}`,
+    id: songid,
     name: songname,
     artista: artistname,
     artistid: artistid,

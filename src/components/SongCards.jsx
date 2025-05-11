@@ -13,6 +13,7 @@ export function SongCards(props){
                 <p>{props.song.artists[0].name}</p>
             </span>
             <MarkAsFav
+                songid={props.song.id}
                 songname={props.song.name} 
                 artistname={props.song.artists[0].name} 
                 artistid={props.song.artists[0].id} 
@@ -22,5 +23,3 @@ export function SongCards(props){
         </span>
     )
 }
-
-//acá iría el botón de favoritos del artista, abajo de song-info

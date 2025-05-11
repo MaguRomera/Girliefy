@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { MarkAsFav } from "../components/FavBtn";
 
 export function FavSongCard({ song }) {
   const navigate = useNavigate();

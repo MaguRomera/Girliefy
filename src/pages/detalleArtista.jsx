@@ -5,7 +5,7 @@ import "../styles/DetalleArtista.css"
 
 import { ArtistDetails } from '../components/ArtistDetailsHeader';
 import { AlbumCard } from '../components/AlbumCard';
-import { BackButton } from '../components/backButton';
+import { BackButton } from '../components/BackButton_Home';
 import { GoToFavSongs } from '../components/GoToFavSongs';
 
 export function DetalleArtista(props){

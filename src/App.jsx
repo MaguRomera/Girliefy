@@ -38,7 +38,7 @@ function App() {
     if(!token){
       requestToken();
     }
-    
+    localStorage.removeItem("favs");
   },[]);
 
 
