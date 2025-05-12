@@ -114,7 +114,7 @@ header{
 .artist-card:hover{
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
-    background-color: black;
+    background-color: var(--darkpink);
 }
 .artist-card h3{
     padding: 0%;

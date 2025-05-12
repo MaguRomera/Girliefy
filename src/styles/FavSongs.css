@@ -1,8 +1,12 @@
 .fav-songs-cnt{
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin: 1rem;
     row-gap: 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .fav-songs-cnt h2{
@@ -36,7 +40,10 @@
     border-radius: 1rem;
     cursor: pointer;
 }
-
+.fav-card:hover{
+    background-color: var(--darkpink);
+    transition-duration: 0.3s;
+}
 
 .extra-info-favsong{
     display: flex;

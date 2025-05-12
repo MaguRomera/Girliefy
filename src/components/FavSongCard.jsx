@@ -9,7 +9,7 @@ export function FavSongCard({ song }) {
   };
 
   return (
-    <div className="fav-card" onClick={handleClick} title="Ver álbum">
+    <div className="fav-card" onClick={handleClick} title="See album">
       <h3>{song.name}</h3>
       <span className="extra-info-favsong">
         <p>{song.artista}</p>
